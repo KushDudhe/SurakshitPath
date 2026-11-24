@@ -1,0 +1,14 @@
+{
+  "name": "surakshitpath",
+  "private": true,
+  "version": "1.0.0",
+  "description": "SurakshitPath – Transparent Safe-Route Planning for Night Travel",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "dev": "concurrently -n client,server -c cyan,gray \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": { "concurrently": "^8.2.2" }
+}
